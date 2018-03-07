@@ -7,24 +7,24 @@ These properties will be set at the beginning and than we concatenate the get wi
 we will return the 2 properties in coresponding values
   
   Methods:
-    * 
-    *
+    * 1
+    * 2
 
 * class Metadata : Will return a configuration array to define the relation between [object getter method] and [result name]
 Here we set the configuration to say what object properties corrsponds to what key in the later created array.
 So a sort of mapping / getUsername will be Username
   
   Methods:
-    *
-    *
+    * 1
+    * 2
 
 * class Normalizer : Will convert the object to a resulting array
 With the object and Metadata as given data we create an associativeArray
 so the 2 properties from the object will generate one key with value in the array result
   
   Methods:
-    *
-    *
+    * 1
+    * 2
 
 * class Serializer : will convert the resulting array to a given format (Json OR PHPNative)
 serialize — Generates a storable representation of a value
@@ -36,8 +36,8 @@ when the format is set to json the array is encoded to json format and saved as 
 if the format is set to nativePHP we serialize the array and put it into a csv file (or another one)
   
   Methods:
-    *
-    *
+    * 1
+    * 2
 
 RESULT:
 
