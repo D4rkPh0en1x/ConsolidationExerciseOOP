@@ -19,3 +19,23 @@ use lib\Normalizer;
 use lib\Serializer;
 use lib\Metadata;
 
+class user{
+    public function firstname(){
+        return firstname;
+    }
+    
+    public function nickname(){
+        return nickname;
+    }
+}
+
+$object = new user();
+
+$meta = new Metadata(['firstname'=>'Frank', 'nickname'=>'D4rkPh0en1x']);
+$norm = new Normalizer($object, $meta);
+$serJSON = new Serializer($norm, 'JSON');
+var_dump($serJSON);
+echo "\n";
+$serPHP = new Serializer($norm, 'PHPNative');
+var_dump($serPHPNative);
+
