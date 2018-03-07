@@ -1,5 +1,5 @@
 * object / getter methods
-The object will have 2 properties given for the class wanted.
+The object will have 2 properties given for the class/key wanted.
 When creating a new object the data for the properties will be given.
 These properties will be set at the beginning and than we concatenate the get with the name given so that it will be dynamic and every getdata would be possible.
 we will return the 2 properties in coresponding values
