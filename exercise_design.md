@@ -15,8 +15,8 @@ Here we set the configuration to say what object properties corrsponds to what k
 So a sort of mapping / getUsername will be Username
   
   Methods:
-    * 1 setConfig
-    * 2 getConfig
+    * setConfig -> set the configuration to map a getmethod to a key value
+    * getConfig -> a method to get the configuration data
 
 * class Normalizer : Will convert the object to a resulting array
 With the object and Metadata as given data we create an associativeArray
