@@ -1,5 +1,5 @@
 <?php
-namespace Metadata;
+namespace lib/Metadata;
 
 class Metadata{
     
