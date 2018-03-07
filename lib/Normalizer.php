@@ -8,10 +8,10 @@ class Normalizer
         $config = $metadata->getConfiguration();
         $intermediateObject = [];
         
-        foreach ($config as $methodname->$outputname) {
-            $value = $inputobject->$methodname();
-            $intermediateObject[$outputname]->value;
-            return $intermediateObject;
+        foreach ($config as $methodname => $outputname) {
+            $value = $object->$methodname();
+            $intermediateObject[$outputname] = $value;
         }
+        return $intermediateObject;
     }
 }
