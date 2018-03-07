@@ -12,23 +12,17 @@ With the object and Metadata as given data we create an associativeArray
 so the 2 properties from the object will generate one key with value in the array result
 
 * class Serializer : will convert the resulting array to a given format (Json OR PHPNative)
-serialize — Generates a storable representation of a value
+serialize â€” Generates a storable representation of a value
 with serialize we prepare the data to put as example in a csv file
-
-json_encode — Returns the JSON representation of a value
+json_encode â€” Returns the JSON representation of a value
 convert the output to a json format and we can than write to a .json file
-
 the result array from the normalizer has to be given to the serializer function.
 when the format is set to json the array is encoded to json format and saved as file.json
 if the format is set to nativePHP we serialize the array and put it into a csv file (or another one)
 
-
 RESULT:
 
 $object = new Object();
-
 new Metadata() -> [configuration];
-
 [configuration] + $object -> new Normalizer() -> [array result];
-
 [array result] -> new Serializer() -> [Json OR PHPNative];
