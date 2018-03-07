@@ -1,5 +1,5 @@
 <?php
-namespace Serialize;
+namespace lib\Serialize;
 
 class Serializer {
     public function serialize($associativeArray, $format){
