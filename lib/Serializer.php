@@ -1,5 +1,5 @@
 <?php
-namespace Serialize;
+namespace lib\Serialize;
 
 class Serializer {
     public function serialize($associativeArray, $format){
@@ -8,6 +8,8 @@ class Serializer {
         }
         if(strtolower($format)=="phpnative"){
             return serialize($associativeArray);
+        }else {
+            throw new Exception('Unknown format given');
         }
     }
 }
