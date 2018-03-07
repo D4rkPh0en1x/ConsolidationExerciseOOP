@@ -23,6 +23,9 @@ if the format is set to nativePHP we serialize the array and put it into a csv f
 RESULT:
 
 $object = new Object();
+
 new Metadata() -> [configuration];
+
 [configuration] + $object -> new Normalizer() -> [array result];
+
 [array result] -> new Serializer() -> [Json OR PHPNative];
