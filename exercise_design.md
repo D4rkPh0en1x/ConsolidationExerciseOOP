@@ -36,8 +36,9 @@ when the format is set to json the array is encoded to json format and saved as 
 if the format is set to nativePHP we serialize the array and put it into a csv file (or another one)
   
   Methods:
-    * 1 setOutputType
-    * 2 writeToFile
+    * setOutputType ->
+    * writeToFile ->
+    * outputSerialize ->
 
 RESULT:
 
