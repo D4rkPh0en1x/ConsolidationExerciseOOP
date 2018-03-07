@@ -1,3 +1,5 @@
+Methods of the class missing!!!! - Review
+
 * object / getter methods
 The object will have 2 properties given for the class/key wanted.
 When creating a new object the data for the properties will be given.
