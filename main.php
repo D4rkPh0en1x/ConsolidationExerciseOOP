@@ -21,21 +21,24 @@ use lib\Metadata;
 
 class user{
     public function firstname(){
-        return firstname;
+        return 'firstname';
     }
     
     public function nickname(){
-        return nickname;
+        return 'nickname';
     }
 }
 
 $object = new user();
 
 $meta = new Metadata(['firstname'=>'Frank', 'nickname'=>'D4rkPh0en1x']);
-$norm = new Normalizer($object, $meta);
-$serJSON = new Serializer($norm, 'JSON');
+
+$norm = new Normalizer();
+
+$ser = new Serializer();
+$serJSON = $ser->serialize($norm->normalizer($object, $meta), 'json');
 var_dump($serJSON);
 echo "\n";
-$serPHP = new Serializer($norm, 'PHPNative');
-var_dump($serPHPNative);
+$serPHP = $ser->serialize($norm->normalizer($object, $meta), 'phpnative');
+var_dump($serPHP);
 
